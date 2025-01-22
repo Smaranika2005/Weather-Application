@@ -42,11 +42,18 @@ def main():
         [data-testid="stToolbar"] {
             visibility: hidden;
         }
-        .stTextInput > div {
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 12px;
-            padding: 12px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        [data-baseweb="input"] {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            border-radius: 12px !important;
+            padding: 12px !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+            border: none !important;
+            color: black !important;
+            font-size: 1rem !important;
+        }
+        [data-baseweb="input"]::placeholder {
+            color: grey !important;
+            font-style: italic !important;
         }
         .center-button {
             display: flex;
